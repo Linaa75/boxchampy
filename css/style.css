@@ -1,0 +1,251 @@
+@import url('reset.css');
+
+@font-face {
+    font-family: 'Saira Condensed';
+    src: url(../fonts/SairaCondensed-Bold.woff), url(../fonts/SairaCondensed-Bold.woff2);
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(../fonts/Inter_28pt-Regular.woff), url(../fonts/Inter_28pt-Regular.woff2);
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: 'Saira Condensed';
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.header {
+    background: url(../img/header/Rectangle2.png) no-repeat 50% / cover ;
+    height: 449px;
+    position: relative;
+}
+
+.header::before {
+    content: '';
+    background: linear-gradient(to top left, #E8E8E8 50%, rgb(6, 6, 6) 50.5%);
+    height: 180px;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+}
+
+.nav__header {
+    padding: 22px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo {
+}
+
+.header__menu {
+    display: flex;
+    align-items: center;
+    padding: 0 0 112px 0;
+}
+
+.header__menu .menu {
+    display: inherit;
+    gap: 30px;
+    padding: 10px;
+    margin: 0 30px 0 0;
+    text-transform: uppercase;
+}
+
+.menu__item:hover {
+    text-decoration: underline #E73539;
+}
+
+.btn {
+    background: #E73539;   
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background: #fff;   
+}
+
+.btn a {
+    display: inline-block;
+    padding: 15px 30px;
+}
+
+.btn a:hover {
+    color: #E73539;
+}
+
+.header__title {
+    font-size: 130px;
+    line-height: 90%;
+    color: #fff;
+    max-width: 598px;
+    padding: 0 0 38px 0;
+    text-transform: uppercase;
+}
+
+.header__title__span {
+    color: #E73539;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.box__items {
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    background: #fff;
+    padding: 40px 117px;
+    width: 738px;
+    box-shadow: 0 4px 68px 0 rgba(231, 53, 57, 0.25);
+}
+
+.box__item {
+    padding: 0 10.5px;
+}
+
+.box__item__img {
+    padding: 0 0 11px;
+    text-align: center;
+}
+
+.box__item__title {
+    color: #E73539;
+    line-height: 110%;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.main {
+    background: #E8E8E8;
+    padding: 200px 0 0;
+}
+
+.hero {
+    padding: 67px 0 106px;
+}
+
+.wrapper {
+    display: flex;
+    gap: 115px;
+}
+
+.hero__img {
+}
+
+.hero__text {
+    padding: 61.5px 0 0;
+}
+
+.hero__text__wrapper {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 0 0 20px;
+}
+
+.red__line {
+    width: 10px;
+    height: 90px;
+    background: #E73539;
+}
+
+.hero__title {
+    font-size: 50px;
+    color: #0E0E0E;
+    line-height: 110%;
+    width: 425px;
+    text-transform: uppercase;
+}
+
+.hero__desc {
+    color: #444;
+    font-family: 'Inter';
+    line-height: 170%; /* 27.2px */
+    text-transform: capitalize;
+    font-weight: 400;
+    text-align: justify;
+    padding: 0 0 20px;
+}
+
+.footer {
+    background: #0E0E0E;
+    padding: 0 0 50px;
+}
+
+.footer__menu {
+    padding: 65px 0 77px 0;
+    display: flex;
+    gap: 600px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__title {
+    color: #E8E8E8;
+    font-size: 50px;
+    width: 360px;
+    line-height: 110%;
+    padding: 0;
+}
+
+.footer__menu__icons {
+    display: flex;
+    gap: 35px;
+}
+
+.footer__menu__bottom {
+    display: flex;
+    gap: 623px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__menu__bottom__left {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.footer__menu__bottom__mail {
+    text-transform: lowercase;
+}
+
+.footer__menu__bottom__right {
+    display: flex;
+    gap: 30px;
+}
+
+.footer__menu__bottom__mail, .footer__menu__bottom__text1, .footer__menu__bottom__text2 {
+    font-family: 'Inter';
+    font-weight: 400;
+    line-height: 170%; 
+}
+
+.footer__menu__bottom__mail:hover, .footer__menu__bottom__text1:hover, .footer__menu__bottom__text2:hover {
+    text-decoration: underline #E73539;
+}
+
